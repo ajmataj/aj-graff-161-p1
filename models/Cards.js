@@ -3,19 +3,19 @@ import mongoose from 'mongoose';
 const CardSchema = new mongoose.Schema({
     name: {
         type: String,
-        required = true
+        required: true,
     },
     cardNum: {
-        type: int,
+        type: Number,
         required: true,
-        unique: true
+        unique: true,
     },
     expMonth: {
-        type: int,
+        type: Number,
         required: true
     },
     expYear: {
-        type: int,
+        type: Number,
         required: true
     }
 });
