@@ -1,0 +1,3 @@
+{
+    "mongoURI": "mongodb+srv://graffaj:matc2019@cluster0-cidkx.mongodb.net/test?retryWrites=true&w=majority"
+}
