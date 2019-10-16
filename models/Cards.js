@@ -14,7 +14,7 @@ const CardSchema = new mongoose.Schema({
         type: int,
         required: true
     },
-    expDay: {
+    expYear: {
         type: int,
         required: true
     }
