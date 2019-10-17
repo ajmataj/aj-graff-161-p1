@@ -10,14 +10,15 @@ connectDatabase();
 
 // Configure Middleware
 app.use(express.json({ extended: false }));
+const path = require('path');
 
 // API endpoints
 /**
  * @route GET /
- * @desc Test endpoint
+ * @desc load webpage
  */
 app.get('/', (req, res) =>
-    res.send('Hello, world')
+    res.sendFile(path.join(__dirname + '/index.html'))
 );
 
 /**
