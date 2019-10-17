@@ -1,5 +1,6 @@
 import express from 'express';
 import connectDatabase from './config/db';
+import insertData from './config/db';
 import { check, validationResult } from 'express-validator';
 
 // Initialize express application
@@ -38,7 +39,16 @@ app.post(
         if (!errors.isEmpty()) {
             return res.status(422).json({ errors: errors.array() });
         } else {
-            return res.send(req.body);
+            // return res.send(req.body);
+            var card = {
+                'name': req.body.name,
+                'cardNum': req.body.cardNum,
+                'expMonth': req.body.cardNum,
+                'expYear': req.body.expYear,
+                'cvv': req.body.cvv
+            }
+
+            insertData(card);
         }
     }
 );
