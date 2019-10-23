@@ -5,31 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Credit Card Protection</title>
+    <link type="text/css" rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h2>Is your credit card info stolen on the internet? Check here!</h2>
-    <form action="/my-handling-form-page" method="post">
-        <div>
-            <label for="name">Name:</label>
-            <input type="text" name="user_name">
-        </div>
-        <div>
-            <label for="cardNum">Credit card #:</label>
-            <input type="number" name="card_number">
-        </div>
-        <div>
-            <label for="expMonth">Expiration month (MM):</label>
-            <input type="number" name="exp_month">
-        </div>
-        <div>
-            <label for="expYear">Expiration year (YY):</label>
-            <input type="number" name="exp_year">
-        </div>
-        <div>
-            <label for="cvv">CVV #:</label>
-            <input type="number" name="cvv_number">
-        </div>
-        <input type="submit" value="Add Name">
-    </form>
+    <div class="container">
+        <h2>Is your credit card info stolen on the internet? Check here!</h2>
+        <form action="/my-handling-form-page" method="post">
+            <div>
+                <input type="text" name="user_name" placeholder="Name">
+            </div>
+            <div>
+                <input type="number" name="card_number" placeholder="Credit Card #">
+            </div>
+            <div>
+                <input type="number" name="exp_month" placeholder="Expiration Month">
+            </div>
+            <div>
+                <input type="number" name="exp_year" placeholder="Expiration Year">
+            </div>
+            <div>
+                <input type="number" name="cvv_number" placeholder="CVV">
+            </div>
+            <input type="submit" value="Check Card">
+        </form>
+    </div>
 </body>
 </html>
