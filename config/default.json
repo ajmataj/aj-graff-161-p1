@@ -1,3 +1,4 @@
 {
-    "mongoURI": "mongodb+srv://graffaj:matc2019@cluster0-cidkx.mongodb.net/test?retryWrites=true&w=majority"
+    "mongoURI": "mongodb+srv://graffaj:S8TbQld0HH6TxjDM@cluster0-cidkx.mongodb.net/test?retryWrites=true&w=majority",
+    "jwtSecret": "thanksforthemoney"
 }
